@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+      "outDir": "dist",
+      "module": "commonjs",
+      "target": "es6",
+      "lib": ["es6", "dom"],
+      "jsx": "react",
+      "declaration": true,
+      "moduleResolution": "node",
+      "forceConsistentCasingInFileNames": false,
+      "strict": true,
+      "esModuleInterop":true,
+      "experimentalDecorators": true,
+      "noErrorTruncation": true,
+      "baseUrl": "./packages",
+      "paths": {
+        "@VaReact-ui/core": ["./VaReact-ui/src"],
+        "@VaReact-ui/core/*": ["./VaReact-ui/src/*"]
+      }
+    },
+    "include": [
+      "types/**/*",
+      "lib/**/*"
+    ],
+    "exclude": [
+      "**/build/",
+      "node_modules",
+      "dist",
+      "build",
+      "public",
+      "jest",
+      "**/*.test.ts",
+      "**/*.test.tsx"
+    ]
+  }
+  

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="5" failures="0" time="11.762">
+  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2020-01-15T20:17:44" time="10.555" tests="3">
+    <testcase classname="classes 接受一个className" name="classes 接受一个className" time="0.002">
+    </testcase>
+    <testcase classname="classes 接受2个以上className" name="classes 接受2个以上className" time="0.001">
+    </testcase>
+    <testcase classname="classes 接受各种奇怪的值" name="classes 接受各种奇怪的值" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="Icon" errors="0" failures="0" skipped="0" timestamp="2020-01-15T20:17:44" time="10.61" tests="2">
+    <testcase classname="Icon svg" name="Icon svg" time="0.009">
+    </testcase>
+    <testcase classname="Icon onCkick" name="Icon onCkick" time="0.025">
+    </testcase>
+  </testsuite>
+</testsuites>

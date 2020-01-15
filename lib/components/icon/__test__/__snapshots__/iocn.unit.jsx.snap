@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon svg 1`] = `
+<svg
+  className="va-icon"
+>
+  <use
+    xlinkHref="#footer"
+  />
+</svg>
+`;
