@@ -1,0 +1,32 @@
+
+.va-layout{
+    border:1px solid #cccccc;
+    display: flex;
+    flex-direction: column;
+    & &{
+       flex-grow: 1;
+       border: 1px solid #cccccc; 
+       flex-direction: row;
+    }
+    .va-layout-hasSider{
+        flex-direction: row;
+        .va-layout{
+            flex-direction: column;
+        }
+    }
+    &-header{
+        border:1px solid #cccccc;
+        flex-flow: 1;
+    }
+    &-content{
+        border:1px solid #cccccc;
+        flex-grow: 1;
+    }
+    &-sider{
+        border:1px solid #cccccc;
+    }
+    &-footer{
+        border: 1px solid #cccccc;
+        flex-grow: 1;
+    }
+}
