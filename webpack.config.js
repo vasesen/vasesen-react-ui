@@ -38,7 +38,21 @@ module.exports = {
             },
             {
                 test: /\.(png|jpeg|jpg|gif)$/,
-                use:['file-loader']
+                use: [
+                        {
+                            loader: 'file-loader',
+                                options: {
+                                    esModule: false,
+                                    name: '[name]', //[path] 上下文环境路径
+                                    publicPath: './assets/image/', //公共路径
+                                    outputPath: 'assets/image/', //输出路径                             
+                                } 
+                            } 
+                    ]
+            },
+            {
+                test: /\.txt$/,
+                use: 'raw-loader'
             }
         ]
     }
