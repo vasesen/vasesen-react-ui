@@ -2,10 +2,6 @@ const base = require('./webpack.config')
 
 module.exports = Object.assign({},base,{
     mode:'production',
-    entry:{
-        ...base.entry,
-        example: './example.tsx'
-    },
     externals:{ 
         react:{
             commonjs:'react',
@@ -19,11 +15,5 @@ module.exports = Object.assign({},base,{
             amd:'react-dom',
             root:'ReactDOM'
         }
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: 'index.html',
-            filename: 'index.html'
-        })
-    ]
+    }
 } )
